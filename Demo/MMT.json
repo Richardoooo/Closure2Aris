@@ -1,0 +1,280 @@
+{
+  "chat": [
+    {
+      "is_breaking": false,
+      "content": "Momotalk",
+      "yuzutalk": {
+        "type": "NARRATION",
+        "avatarState": "AUTO",
+        "nameOverride": ""
+      },
+      "arknights": {
+        "type": "TEXT"
+      }
+    },
+    {
+      "is_breaking": false,
+      "content": "日奈早上好",
+      "yuzutalk": {
+        "type": "TEXT",
+        "avatarState": "AUTO",
+        "nameOverride": ""
+      },
+      "arknights": {
+        "type": "TEXT"
+      }
+    },
+    {
+      "is_breaking": false,
+      "content": "说起来，日奈已经知道电台的那件事了吧",
+      "yuzutalk": {
+        "type": "TEXT",
+        "avatarState": "AUTO",
+        "nameOverride": ""
+      },
+      "arknights": {
+        "type": "TEXT"
+      }
+    },
+    {
+      "char_id": "ba-Hina",
+      "img": "Hina",
+      "is_breaking": false,
+      "content": "嗯",
+      "yuzutalk": {
+        "type": "TEXT",
+        "avatarState": "AUTO",
+        "nameOverride": ""
+      },
+      "arknights": {
+        "type": "TEXT"
+      }
+    },
+    {
+      "char_id": "ba-Hina",
+      "img": "Hina",
+      "is_breaking": false,
+      "content": "因为前几天有听过",
+      "yuzutalk": {
+        "type": "TEXT",
+        "avatarState": "AUTO",
+        "nameOverride": ""
+      },
+      "arknights": {
+        "type": "TEXT"
+      }
+    },
+    {
+      "char_id": "ba-Hina",
+      "img": "Hina",
+      "is_breaking": false,
+      "content": "所以还是了解的",
+      "yuzutalk": {
+        "type": "TEXT",
+        "avatarState": "AUTO",
+        "nameOverride": ""
+      },
+      "arknights": {
+        "type": "TEXT"
+      }
+    },
+    {
+      "is_breaking": false,
+      "content": "诶，日奈也听吗",
+      "yuzutalk": {
+        "type": "TEXT",
+        "avatarState": "AUTO",
+        "nameOverride": ""
+      },
+      "arknights": {
+        "type": "TEXT"
+      }
+    },
+    {
+      "is_breaking": false,
+      "content": "有点受宠若惊",
+      "yuzutalk": {
+        "type": "TEXT",
+        "avatarState": "AUTO",
+        "nameOverride": ""
+      },
+      "arknights": {
+        "type": "TEXT"
+      }
+    },
+    {
+      "is_breaking": false,
+      "content": "我以为没什么人看的来着...",
+      "yuzutalk": {
+        "type": "TEXT",
+        "avatarState": "AUTO",
+        "nameOverride": ""
+      },
+      "arknights": {
+        "type": "TEXT"
+      }
+    },
+    {
+      "char_id": "ba-Hina",
+      "img": "Hina",
+      "is_breaking": false,
+      "content": "怎么会呢",
+      "yuzutalk": {
+        "type": "TEXT",
+        "avatarState": "AUTO",
+        "nameOverride": ""
+      },
+      "arknights": {
+        "type": "TEXT"
+      }
+    },
+    {
+      "char_id": "ba-Hina",
+      "img": "Hina",
+      "is_breaking": false,
+      "content": "我觉得老师讲的内容都很不错",
+      "yuzutalk": {
+        "type": "TEXT",
+        "avatarState": "AUTO",
+        "nameOverride": ""
+      },
+      "arknights": {
+        "type": "TEXT"
+      }
+    },
+    {
+      "is_breaking": false,
+      "content": "过奖了",
+      "yuzutalk": {
+        "type": "TEXT",
+        "avatarState": "AUTO",
+        "nameOverride": ""
+      },
+      "arknights": {
+        "type": "TEXT"
+      }
+    },
+    {
+      "is_breaking": false,
+      "content": "不过说起来，学生会的通知你也知道了吧",
+      "yuzutalk": {
+        "type": "TEXT",
+        "avatarState": "AUTO",
+        "nameOverride": ""
+      },
+      "arknights": {
+        "type": "TEXT"
+      }
+    },
+    {
+      "char_id": "ba-Hina",
+      "img": "Hina",
+      "is_breaking": false,
+      "content": "嗯，明天我会腾时间的",
+      "yuzutalk": {
+        "type": "TEXT",
+        "avatarState": "AUTO",
+        "nameOverride": ""
+      },
+      "arknights": {
+        "type": "TEXT"
+      }
+    },
+    {
+      "is_breaking": false,
+      "content": "我会把演讲稿发给你的",
+      "yuzutalk": {
+        "type": "TEXT",
+        "avatarState": "AUTO",
+        "nameOverride": ""
+      },
+      "arknights": {
+        "type": "TEXT"
+      }
+    },
+    {
+      "is_breaking": false,
+      "content": "期待你的演讲",
+      "yuzutalk": {
+        "type": "TEXT",
+        "avatarState": "AUTO",
+        "nameOverride": ""
+      },
+      "arknights": {
+        "type": "TEXT"
+      }
+    },
+    {
+      "is_breaking": false,
+      "content": "resources/ba/stamps/ClanChat_Emoji_10_Jp.webp",
+      "yuzutalk": {
+        "type": "IMAGE",
+        "avatarState": "AUTO",
+        "nameOverride": ""
+      },
+      "arknights": {
+        "type": "IMAGE"
+      }
+    },
+    {
+      "char_id": "ba-Hina",
+      "img": "Hina",
+      "is_breaking": false,
+      "content": "谢谢，那老师明天见",
+      "yuzutalk": {
+        "type": "TEXT",
+        "avatarState": "AUTO",
+        "nameOverride": ""
+      },
+      "arknights": {
+        "type": "TEXT"
+      }
+    },
+    {
+      "is_breaking": false,
+      "content": "日奈也要加油哦 明天见",
+      "yuzutalk": {
+        "type": "TEXT",
+        "avatarState": "AUTO",
+        "nameOverride": ""
+      },
+      "arknights": {
+        "type": "TEXT"
+      }
+    }
+  ],
+  "chars": [
+    {
+      "char_id": "ba-Arona",
+      "img": "Arona"
+    },
+    {
+      "char_id": "ba-Rin",
+      "img": "Rin"
+    },
+    {
+      "char_id": "ba-Tea_party",
+      "img": "Teaparty_Administrator"
+    },
+    {
+      "char_id": "ba-Tea_party",
+      "img": "Teaparty_Escort"
+    },
+    {
+      "char_id": "ba-Hina",
+      "img": "Hina"
+    },
+    {
+      "char_id": "ba-Iori",
+      "img": "Iori"
+    },
+    {
+      "char_id": "ba-Ako",
+      "img": "Ako"
+    },
+    {
+      "char_id": "ba-Chinatsu",
+      "img": "Chinatsu"
+    }
+  ]
+}

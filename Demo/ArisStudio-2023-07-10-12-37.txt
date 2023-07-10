@@ -1,0 +1,55 @@
+load spr arona arona_spr
+load spr rin rin_spr
+load spr teaparty_administrator teaparty_administrator_spr
+load spr teaparty_escort teaparty_escort_spr
+load spr hina hina_spr
+load spr iori iori_spr
+load spr ako ako_spr
+load spr chinatsu chinatsu_spr
+load end
+txt '' '' 'Momotalk'
+button '日奈早上好' '0'
+target 0
+
+button '说起来，日奈已经知道电台的那件事了吧' '1'
+target 1
+
+spr show hina
+txt '空崎 日奈' '风纪委员会' '嗯'
+
+txt '空崎 日奈' '风纪委员会' '因为前几天有听过'
+
+txt '空崎 日奈' '风纪委员会' '所以还是了解的'
+
+button '诶，日奈也听吗' '2'
+target 2
+
+button '有点受宠若惊' '3'
+target 3
+
+button '我以为没什么人看的来着...' '4'
+target 4
+
+txt '空崎 日奈' '风纪委员会' '怎么会呢'
+
+txt '空崎 日奈' '风纪委员会' '我觉得老师讲的内容都很不错'
+
+button '过奖了' '5'
+target 5
+
+button '不过说起来，学生会的通知你也知道了吧' '6'
+target 6
+
+txt '空崎 日奈' '风纪委员会' '嗯，明天我会腾时间的'
+
+button '我会把演讲稿发给你的' '7'
+target 7
+
+button '期待你的演讲' '8'
+target 8
+
+txt '空崎 日奈' '风纪委员会' '谢谢，那老师明天见'
+
+button '日奈也要加油哦 明天见' '9'
+target 9
+
