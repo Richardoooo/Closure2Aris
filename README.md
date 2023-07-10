@@ -2,6 +2,8 @@
  Convert ClosureTalk json to ArisStudio txt
 
  把ClosureTalk下载的json 转换成 ArisStudio格式
+ 将对话，旁白和选项转换成ArisStudio可读取的格式
+ 舍弃了表情和图片数据
 
  ## Source
  学生英文名对应的Club和中文名
