@@ -11,7 +11,7 @@
  >感谢Mollutalk提供的学生数据
 
  ## 如何使用
- 下载Release中的Aris2Closure.exe，直接在文件管理器中打开
+ 下载[Release](https://github.com/Richardoooo/Closure2Aris/releases/tag/v0.1.0-alpha)中的Aris2Closure.exe，直接在文件管理器中打开
 
  ## **Warning**
  该项目仍然存在Bug，如部分新出的学生，卫星，和一些杂鱼酱的名字可能会和ArisStudio不符，正在寻找解决方法。
