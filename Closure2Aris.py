@@ -410,7 +410,7 @@ print("拖入终端后按回车，如果空着则直接按回车。")
 InputPath = input("请输入要转换的ClosureTalk.json的文件路径>>")
 OutputPath = input("请输入保存的txt路径，如果为空则默认和该文件相同，建议为空>>")
 
-#Delete " symbol
+# Delete " symbol
 
 if InputPath[-1] == '"':
     InputPath = InputPath.split('"')[1]
@@ -423,20 +423,34 @@ if OutputPath:
 with open(InputPath,'r',encoding='utf-8') as f:
     Talk = json.loads(f.read())
 
-#Processing data
+# Processing data
 
 ChatList = Talk["chat"]
 
-CharacterList = [Chr['img'].lower() for Chr in Talk["chars"]]
+CharacterList = []
 
-#Loading spring
+for Chr in Talk["chars"]:
+    if Chr['img'].lower() in CharacterName:
+        CharacterList.append(Chr['img'].lower())
+    else:
+        CharacterName[Chr['char_id']] = Chr['char_id']
+        CharacterClub[Chr['char_id']] = ""
+        CharacterList.append(Chr['char_id'])
+        print("检测到自创角色或者不支持的角色，由于格式限制将名字转换为{}，头像为{}".format(Chr["char_id"], Chr['img']))
+
+
+# Loading spring
 
 for Chr in CharacterList:
-    txt = txt + "load spr {} {}".format(Chr, Chr+"_spr") + "\n"
+
+    # If character isn't custom
+
+    if Chr[:6] != "custom":
+        txt = txt + "load spr {} {}".format(Chr, Chr+"_spr") + "\n"
 
 txt += "load end\n"
 
-#Adding chats
+# Adding chats
  
 state = ''
 
@@ -447,25 +461,40 @@ for Chat in ChatList:
     # If type = text
     
     if Chat['yuzutalk']['type'] == "TEXT":
+
         if "img" in Chat:
-            Name = Chat["img"].lower()
-            if state == Name:
-                pass
+
+            # If character isn't custom
+            # Skip showing the spring
+
+            if Chat['img'] != "uploaded":
+
+                Name = Chat["img"].lower()
+
+                if state == Name:
+                    pass
+                else:
+
+                    # Let character hide then show if previous character isn't same
+
+                    if state != '':
+                        txt += "spr hide {}\n".format(state)
+
+                    txt += "spr show {}\n".format(Name)
+                state = Name
+
             else:
-
-                # Let character hide then show if previous character isn't same
-
-                if state != '':
-                    txt += "spr hide {}\n".format(state)
-                txt += "spr show {}\n".format(Name)
+                Name = Chat["char_id"]
+                
             content = Chat["content"].split("\n")
+            
             for text in content:
 
                 # Iterate by every return, cuz there's a bug on showing \n in aris studio
                 # Student chat in chinese <Name> <Club>
 
                 txt = txt + "txt '{}' '{}' '{}'\n".format(CharacterName[Name],CharacterClub[Name],text)
-            state = Name
+            
         else:
 
             # Use button to show sensei's chat
