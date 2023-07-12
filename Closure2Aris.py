@@ -502,7 +502,11 @@ for Chat in ChatList:
             # Target <> is the event number after pressing button
             # I use self-add int
 
-            txt += "button '{}' '{}'\n".format(Chat["content"],str(ChoiceState))
+            content = Chat["content"].split("\n")
+
+            for text in content:
+                txt += "button '{}' '{}'\n".format(text,str(ChoiceState))
+
             txt += "target {}\n".format(str(ChoiceState))
             ChoiceState += 1
 
@@ -518,9 +522,10 @@ for Chat in ChatList:
 
         # Add chat with no name
         # Easiest one
-
-        txt += "txt '' '' '{}'".format(Chat["content"])
-        txt += '\n'
+        content = Chat["content"].split("\n")
+        for text in content:
+            txt += "txt '' '' '{}'".format(text)
+            txt += '\n'
 
     # Choice
     elif Chat['yuzutalk']['type'] == "CHOICES":
@@ -533,7 +538,7 @@ for Chat in ChatList:
         txt += "button"
         for text in content:
             txt = txt + " '{}' '{}'".format(text,str(ChoiceState))
-        txt += "target {}".format(str(ChoiceState))
+        txt += "\ntarget {}".format(str(ChoiceState))
         ChoiceState += 1
         txt += "\n"
 
