@@ -532,7 +532,7 @@ for Chat in ChatList:
         content = Chat["content"].split("\n")
         txt += "button"
         for text in content:
-            txt = txt + " '{}' '{}'".format(Name,str(ChoiceState))
+            txt = txt + " '{}' '{}'".format(text,str(ChoiceState))
         txt += "target {}".format(str(ChoiceState))
         ChoiceState += 1
         txt += "\n"
